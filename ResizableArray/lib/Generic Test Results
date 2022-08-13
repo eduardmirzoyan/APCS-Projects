@@ -1,0 +1,57 @@
+First Wave Function Test:
+1, 2, 3,  size = 3
+1, 2, 3, 4, 5, 6,  size = 6
+1, 3, 4, 5, 7,  size = 5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Full Function Test:
+1, 1, 2, 3, 5, 8, 13, 
+0
+4
+6
+-1
+true
+false
+Caught exception from a bad insert (this is a good thing). Message: Index out of bounds: 10 for value: 5
+Caught exception from a bad remove (this is also a good thing). Message: Index out of bounds: 10
+1, 1, 2, 3, 5, 8, 13, 
+true
+[1, 5, 2, 3, 5, 8, 13]
+1, 1, 2, 3, 5, 8, 13, 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Efficiency Tests:
+10:
+The test took 10 milliseconds.
+And 640 bytes of memory.
+
+Your ResizableArray contains the following: 
+Footprint{Objects=12, References=111, Primitives=[int x 12]}
+
+100:
+The test took 8 milliseconds.
+And 2480 bytes of memory.
+
+Your ResizableArray contains the following: 
+Footprint{Objects=102, References=211, Primitives=[int x 102]}
+
+1000:
+The test took 22 milliseconds.
+And 24080 bytes of memory.
+
+Your ResizableArray contains the following: 
+Footprint{Objects=1002, References=2011, Primitives=[int x 1002]}
+
+10000:
+The test took 155 milliseconds.
+And 240080 bytes of memory.
+
+Your ResizableArray contains the following: 
+Footprint{Objects=10002, References=20011, Primitives=[int x 10002]}
+
+100000:
+The test took 12545 milliseconds.
+And 2400080 bytes of memory.
+
+Your ResizableArray contains the following: 
+Footprint{Objects=100002, References=200011, Primitives=[int x 100002]}

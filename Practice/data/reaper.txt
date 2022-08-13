@@ -1,0 +1,1 @@
+The readLine() method reads a line of text from a character-oriented input stream, and puts it into a new String object which it returns as a reference. If there is no more data in the file, it returns null.

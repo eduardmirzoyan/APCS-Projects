@@ -1,0 +1,65 @@
+Recursion Data:
+	Time:
+	10 - 10586 nanoseconds
+	20 - 378198 nanoseconds
+	30 - 5633198 nanoseconds
+	40 - 700294988 nanoseconds
+	45 - 6916618657 nanoseconds
+	
+	Iterations:
+	Test 1 had 1 iterations
+	Test 2 had 4 iterations
+	Test 3 had 9 iterations
+	Test 4 had 18 iterations
+	Test 5 had 33 iterations
+	Test 6 had 58 iterations
+	Test 7 had 99 iterations
+	Test 8 had 166 iterations
+	Test 9 had 275 iterations
+	Test 10 had 452 iterations
+
+
+Loop Data:
+	Time:
+	10 - 3208 nanoseconds
+	20 - 3528 nanoseconds
+	30 - 3208 nanoseconds
+	40 - 3849 nanoseconds
+	45 - 3849 nanoseconds
+	
+	Iterations:
+	Test 1 had 2 iterations
+	Test 2 had 5 iterations
+	Test 3 had 9 iterations
+	Test 4 had 14 iterations
+	Test 5 had 20 iterations
+	Test 6 had 27 iterations
+	Test 7 had 35 iterations
+	Test 8 had 44 iterations
+	Test 9 had 54 iterations
+	Test 10 had 65 iterations
+	
+Questions:
+1. The timing data for Recursion increased as the input was made larger, but for the loop, the time was
+	relatively the same. The loop data was also overall shorter. There was such a gap because the
+	recursion method had to repeat itself much more times than the loop.
+2. Both forms start out about the same but the recursions ramps up in its iterations much quickly while
+	the loop seems to be more linearly increasing
+3.  Loop method: Iterations = (n+3) + 2
+	Recursion method: Iterations = (2)*(1 - 2^n)/(-1)
+4. The loop method is faster as it doesn't require the recalling of itself which makes the virtual machine
+	constantly go through conditions and incrementations, then go all the way back returning values.
+	
+Hanoi Iterations:
+	A 1 disk hanoi puzzle had 1 iterations
+	A 2 disk hanoi puzzle had 3 iterations
+	A 3 disk hanoi puzzle had 7 iterations
+	A 4 disk hanoi puzzle had 15 iterations
+	A 5 disk hanoi puzzle had 31 iterations
+	A 6 disk hanoi puzzle had 63 iterations
+	A 7 disk hanoi puzzle had 127 iterations
+	A 8 disk hanoi puzzle had 255 iterations
+	A 9 disk hanoi puzzle had 511 iterations
+	A 10 disk hanoi puzzle had 1023 iterations
+	
+	Equation: Y = 2^n - 1;

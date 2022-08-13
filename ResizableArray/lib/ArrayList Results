@@ -1,0 +1,36 @@
+Efficiency Tests:
+The test took 3557 milliseconds.
+And 2560432 bytes of memory.
+
+Your ResizableArray contains the following: 
+Footprint{Objects=100002, References=240098, Primitives=[int x 100002]}
+
+PREDICTION:
+Run Time: 2300 ms
+Memory: 2500000 bytes
+
+TEST RESULT:
+The test took 7070 milliseconds.
+And 2560432 bytes of memory.
+
+Your ResizableArray contains the following: 
+Footprint{Objects=100002, References=240098, Primitives=[int x 100002]}
+
+EXPLANATION:
+The arraylist had to constantly move the old values back in order to make space for the new values
+causing the program to have a longer run time
+
+PREDICTION #2:
+Run Time: 3000 ms
+Memory: 2500000 bytes
+
+TEST RESULT:
+The test took 15 milliseconds.
+And 2560432 bytes of memory.
+
+Your ResizableArray contains the following: 
+Footprint{Objects=100002, References=240098, Primitives=[int x 100002]}
+
+EXPLANATION:
+Since the arraylist is very large and does not have to move older values, the list was much faster than
+the prevous two
